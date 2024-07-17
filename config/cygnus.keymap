@@ -8,7 +8,12 @@
 
         bluetooth {
             bindings = <&mo 3>;
-            key-positions = <37 41>;
+            key-positions = <41 36>;
+        };
+
+        bt2 {
+            bindings = <&mo 3>;
+            key-positions = <48 53>;
         };
     };
 
@@ -62,7 +67,7 @@
             >;
         };
 
-        lower_layer {
+        layer_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 | BKSP |
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -71,15 +76,15 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6     &kp F7                          &kp F8                     &kp F9                   &kp F10          &trans
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &trans     &trans                          &trans                     &trans                   &trans           &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans     &hmr RIGHT_SHIFT RIGHT_BRACKET  &hmr RIGHT_GUI LEFT_BRACE  &hmr RIGHT_ALT UP_ARROW  &kp BSLH         &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &kp SLASH  &kp MINUS                       &kp LEFT_ARROW             &kp DOWN_ARROW           &kp RIGHT_ARROW  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &trans     &trans                          &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5    &kp F6     &kp F7                          &kp F8                     &kp F9                   &kp F10          &kp F11
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6     &kp N7                          &kp N8                     &kp N9                   &kp N0           &kp F12
+&trans  &trans        &trans        &trans        &trans        &trans    &trans     &hmr RIGHT_SHIFT RIGHT_BRACKET  &hmr RIGHT_GUI LEFT_BRACE  &hmr RIGHT_ALT UP_ARROW  &kp BSLH         &trans
+&trans  &kp GRAVE     &kp EQUAL     &trans        &trans        &trans    &kp SLASH  &kp MINUS                       &kp LEFT_ARROW             &kp DOWN_ARROW           &kp RIGHT_ARROW  &trans
+                                    &trans        &trans        &trans    &trans     &trans                          &trans
             >;
         };
 
-        raise_layer {
+        layer_2 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -87,21 +92,21 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BSPC
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &trans    &trans  &trans    &trans    &trans           &trans     &trans     &trans     &trans    &trans    &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&trans  &trans    &trans  &trans    &trans    &trans           &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans           &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                          &trans    &trans    &kp BACKSPACE    &trans     &trans     &trans
             >;
         };
 
-        layer_3 {
+        bluetooth {
             bindings = <
-&trans  &trans        &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans  &trans        &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans        &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
