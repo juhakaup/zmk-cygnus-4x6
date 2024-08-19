@@ -76,11 +76,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5    &kp F6     &kp F7                          &kp F8                     &kp F9                   &kp F10          &kp F11
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp N6     &kp N7                          &kp N8                     &kp N9                   &kp N0           &kp F12
-&trans  &trans        &trans        &trans        &trans        &trans    &trans     &hmr RIGHT_SHIFT RIGHT_BRACKET  &hmr RIGHT_GUI LEFT_BRACE  &hmr RIGHT_ALT UP_ARROW  &kp BSLH         &trans
-&trans  &kp GRAVE     &kp EQUAL     &trans        &trans        &trans    &kp SLASH  &kp MINUS                       &kp LEFT_ARROW             &kp DOWN_ARROW           &kp RIGHT_ARROW  &trans
-                                    &trans        &trans        &trans    &trans     &trans                          &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5           &kp F6     &kp F7                          &kp F8                     &kp F9         &kp F10       &kp F11
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &kp N6     &kp N7                          &kp N8                     &kp N9         &kp N0        &kp F12
+&trans  &trans        &trans        &trans        &trans        &trans           &trans     &hmr RIGHT_SHIFT RIGHT_BRACKET  &hmr RIGHT_GUI LEFT_BRACE  &kp RIGHT_ALT  &kp UP_ARROW  &kp BSLH
+&trans  &kp GRAVE     &kp EQUAL     &trans        &trans        &trans           &kp SLASH  &kp MINUS                       &trans                     &kp LEFT       &kp DOWN      &kp RIGHT
+                                    &trans        &trans        &kp BACKSPACE    &trans     &trans                          &trans
             >;
         };
 
