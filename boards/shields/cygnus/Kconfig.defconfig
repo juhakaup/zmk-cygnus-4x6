@@ -1,10 +1,16 @@
-if SHIELD_CYGNUS_LEFT
+if SHIELD_CYGNUS_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Cygnus"
+    default "Cygnus Dongle"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config BT_MAX_CONN
+    default 7
+
+config ZMK_COMBO_MAX_COMBOS_PER_KEY
+    default 7
+
+config BT_MAX_PAIRED
+    default 7
 
 endif
 

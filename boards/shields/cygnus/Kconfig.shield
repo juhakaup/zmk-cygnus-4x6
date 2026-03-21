@@ -3,3 +3,6 @@ config SHIELD_CYGNUS_LEFT
 
 config SHIELD_CYGNUS_RIGHT
     def_bool $(shields_list_contains,cygnus_right)
+
+config SHIELD_CYGNUS_DONGLE
+    def_bool $(shields_list_contains,cygnus_dongle)

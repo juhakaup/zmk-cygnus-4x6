@@ -18,7 +18,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cygnus_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cygnus_right
+  - board: nice_nano//zmk
+    shield: cygnus_dongle
